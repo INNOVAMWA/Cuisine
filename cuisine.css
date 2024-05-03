@@ -35,10 +35,20 @@ a {
 }
 
 
+header button {
+    display: none;
+}
+
+.search-nav {
+    justify-content: space-between;
+    width: 60%;
+}
+
 .nav-bar {
     list-style: none;
     gap: 30px;
     text-transform:capitalize ;
+    font-size: 20px;
 }
 
 .head-bar {
@@ -52,7 +62,9 @@ a {
 
 .search-profile {
     gap: 15px;
+    align-items: center;
 }
+
 
 .page-box {
     flex-direction: column;
@@ -74,26 +86,35 @@ a {
     object-fit: cover;
 }
 
+
 .food-box-text {
     font-size: 26px;
     margin-top: 30px;
 }
 
 .berry-box-write {
-    width: 500px;
+    width: 48%;
     padding-right: 10px;
 }
 
 .berry-box-head {
     font-size: 50px;
-    width: 450px;
 }
 
-.berro-box-text {
+.berry-box-text {
     font-size: 25px;
     margin-top: 15px;
-    width: 450px;
 }
+
+.berry-box-img {
+    width: 48%;
+}
+
+
+.berry-box-img img {
+    width: 100%;
+}
+
 
 .team-box {
     margin-top: 100px;;
@@ -107,8 +128,8 @@ a {
 }
 
 .team-box-profiles-net {
+    width: 100%;
     flex-wrap: wrap;
-    justify-content: center;
     row-gap: 50px;
     column-gap: 29px;
     text-align: center;
@@ -123,4 +144,73 @@ a {
     border-radius: 50%;
     margin-bottom: 5px;
     object-fit: cover;
+}
+
+
+
+
+/* responsive part of the programme */
+
+/* mobile phones responsive part */
+
+@media screen and (max-width: 748px) {
+    .padding-box {
+        padding: 10px 15px;
+    }
+
+    header button { 
+        display: block ;
+  }  
+
+    .nav-bar {
+      display: none;
+      justify-content: ;
+    }
+
+    nav {
+        order: 3;
+    
+    }
+    .search-nav {
+       justify-content: end;
+       gap: 50px;
+    }
+
+    .search-profile {
+        gap: 50px;
+    }
+
+    .about-box-head {
+        padding-top: 50px;
+    }
+
+    .food-box-head {
+        font-size: 42px;
+    }
+
+    .berry-box {
+      flex-direction: column-reverse;
+    }
+
+    .berry-box-img {
+        width: 100%;
+    }
+
+    .berry-box-write {
+        width: 100%;
+    }
+
+    .berry-box-head {
+        font-size: 46px;
+        margin-top: 30px;
+    }
+
+    .team-box-head {
+        font-size: 40px;
+    }
+
+    .team-box-profiles-net {
+        width: 100%;
+        justify-content: space-between;
+    }
 }
